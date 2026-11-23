@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom'
 
 export default function DestinoCard({ destino }) {
-  const { id, nombre, pais, continente, emoji, color, descripcion, actividades } = destino
+  const { id, nombre, pais, continente, imagen, imagenAlt, color, descripcion, actividades } = destino
   return (
     <article className="card destino-card">
       <div className="destino-card__portada" style={{ background: color }}>
-        <span className="destino-card__emoji">{emoji}</span>
+        <img src={imagen} alt={imagenAlt} loading="lazy" className="foto-cover" onError={(e) => (e.currentTarget.style.display = 'none')} />
         <span className="chip chip--claro">{continente}</span>
       </div>
       <div className="card__cuerpo">

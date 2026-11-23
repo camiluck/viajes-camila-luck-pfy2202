@@ -54,7 +54,7 @@ export default function Ofertas() {
             <tbody>
               {data.ofertas.map((o) => (
                 <tr key={o.id}>
-                  <td data-label="Destino">{o.destino.emoji} {o.destino.nombre}, {o.destino.pais}</td>
+                  <td data-label="Destino">{o.destino.nombre}, {o.destino.pais}</td>
                   <td data-label="Aerolínea">{o.aerolinea} {o.codigo}</td>
                   <td data-label="Fechas">{formatoFecha(o.fechaSalida)} – {formatoFecha(o.fechaRegreso)}</td>
                   <td data-label="Asientos">{o.asientosDisponibles}</td>

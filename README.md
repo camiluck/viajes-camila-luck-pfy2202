@@ -1,4 +1,4 @@
-# ✈️ ViajaFácil – Agencia de viajes
+# ViajaFácil – Agencia de viajes
 
 Aplicación web para una agencia de viajes donde los usuarios pueden explorar destinos, comparar **vuelos** y **hoteles** disponibles y armar su plan de viaje con el precio total estimado.
 
@@ -173,3 +173,16 @@ Flujo probado: cargar inicio → listar destinos → filtrar por continente y bu
 ---
 
 **Autor:** Camila Luck · Desarrollo Frontend II (PFY2202) · Duoc UC
+
+## 🖼️ Créditos de las fotos
+
+Fotos obtenidas de [Wikimedia Commons](https://commons.wikimedia.org), con licencias libres:
+
+| Destino | Archivo | Autor · Licencia |
+|---|---|---|
+| Cusco | [Machu Picchu, Peru.jpg](https://commons.wikimedia.org/wiki/File:Machu_Picchu,_Peru.jpg) | Pedro Szekely · ver licencia en Commons |
+| Cancún | [Cancun Beach.jpg](https://commons.wikimedia.org/wiki/File:Cancun_Beach.jpg) | Keith Pomakis · CC BY-SA 2.5 |
+| Madrid | [Vista de Madrid - Centro 14.jpg](https://commons.wikimedia.org/wiki/File:Vista_de_Madrid_-_Centro_14.jpg) | Guzmán Lozano · CC BY 2.0 |
+| Tokio | [Skyscrapers of Shinjuku 2009 January.jpg](https://commons.wikimedia.org/wiki/File:Skyscrapers_of_Shinjuku_2009_January.jpg) | Morio · ver licencia en Commons |
+| Torres del Paine | [Cuernos del Paine 2011.jpg](https://commons.wikimedia.org/wiki/File:Cuernos_del_Paine_2011.jpg) | Alex Proimos · CC BY 2.0 |
+| Roma | [Colosseo 2020.jpg](https://commons.wikimedia.org/wiki/File:Colosseo_2020.jpg) | FeaturedPics · CC BY-SA 4.0 |

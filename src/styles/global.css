@@ -52,7 +52,8 @@ img { max-width: 100%; }
 /* ===== Footer ===== */
 .footer { background: #0f172a; color: #cbd5e1; padding: 1.5rem 0; font-size: 0.9rem; text-align: center; }
 .footer p { margin: 0.2rem 0; }
-.footer__nota { color: #94a3b8; font-size: 0.8rem; }
+.footer__marca { font-weight: 700; font-size: 1.05rem; color: #fff; }
+.footer__nota { color: #94a3b8; font-size: 0.85rem; }
 
 /* ===== Botones ===== */
 .btn {
@@ -99,9 +100,11 @@ img { max-width: 100%; }
 
 .destino-card { display: flex; flex-direction: column; overflow: hidden; transition: transform 0.15s, box-shadow 0.15s; }
 .destino-card:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12); }
-.destino-card__portada { height: 130px; display: flex; align-items: center; justify-content: center; position: relative; }
-.destino-card__emoji { font-size: 3.5rem; }
-.destino-card__portada .chip { position: absolute; top: 0.75rem; right: 0.75rem; }
+.destino-card__portada { height: 180px; position: relative; overflow: hidden; }
+.foto-cover { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+.destino-card .foto-cover { transition: transform 0.4s; }
+.destino-card:hover .foto-cover { transform: scale(1.05); }
+.destino-card__portada .chip { position: absolute; top: 0.75rem; right: 0.75rem; z-index: 1; }
 
 .lista-chips { list-style: none; padding: 0; margin: 0.5rem 0 0; display: flex; flex-wrap: wrap; gap: 0.4rem; }
 .chip { background: #eef2ff; color: #3730a3; border-radius: 999px; padding: 0.2rem 0.7rem; font-size: 0.82rem; }
@@ -130,10 +133,12 @@ img { max-width: 100%; }
 
 /* ===== Detalle ===== */
 .volver { display: inline-block; margin-bottom: 1rem; text-decoration: none; font-weight: 500; }
-.detalle-hero { color: #fff; border-radius: var(--radio); padding: 2rem; display: flex; align-items: center; gap: 1.5rem; }
+.detalle-hero { color: #fff; border-radius: var(--radio); padding: 2rem; display: flex; align-items: flex-end; min-height: 300px; position: relative; overflow: hidden; }
+.detalle-hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.05) 65%); }
+.detalle-hero__texto { position: relative; z-index: 1; text-shadow: 0 2px 8px rgba(0,0,0,0.4); }
+.detalle-hero__credito { position: absolute; z-index: 1; right: 0.75rem; bottom: 0.5rem; font-size: 0.7rem; opacity: 0.75; }
 .detalle-hero h1 { margin: 0; }
 .detalle-hero p { margin: 0.25rem 0 0; opacity: 0.9; }
-.detalle-hero__emoji { font-size: 4rem; }
 .detalle-info { margin: 1.5rem 0; }
 .detalle-info__datos { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.75rem 2rem; margin: 1rem 0; }
 .detalle-info__datos span, .opcion__datos span { display: block; font-size: 0.78rem; text-transform: uppercase; color: var(--suave); letter-spacing: 0.04em; }
@@ -202,7 +207,7 @@ img { max-width: 100%; }
   .navbar__links.abierto { display: flex; }
   .navbar__links a { border-radius: 10px; }
 
-  .detalle-hero { flex-direction: column; text-align: center; padding: 1.5rem; }
+  .detalle-hero { min-height: 220px; padding: 1.25rem 1.25rem 2rem; }
 
   /* Tabla como tarjetas en móvil */
   .tabla thead { display: none; }

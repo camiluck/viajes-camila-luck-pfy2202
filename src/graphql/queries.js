@@ -44,7 +44,6 @@ export const OFERTAS_VUELOS = gql`
         id
         nombre
         pais
-        emoji
       }
     }
   }

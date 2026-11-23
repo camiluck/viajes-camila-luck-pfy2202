@@ -43,11 +43,12 @@ export default function DestinoDetalle() {
       <Link to="/destinos" className="volver">← Todos los destinos</Link>
 
       <section className="detalle-hero" style={{ background: destino.color }}>
-        <span className="detalle-hero__emoji">{destino.emoji}</span>
-        <div>
+        <img src={destino.imagen} alt={destino.imagenAlt} className="foto-cover" onError={(e) => (e.currentTarget.style.display = 'none')} />
+        <div className="detalle-hero__texto">
           <h1>{destino.nombre}</h1>
           <p>📍 {destino.pais} · {destino.continente}</p>
         </div>
+        <small className="detalle-hero__credito">Foto: {destino.credito} · Wikimedia Commons</small>
       </section>
 
       <section className="detalle-info">

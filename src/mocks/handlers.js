@@ -71,7 +71,7 @@ export const handlers = [
         const d = destinos.find((x) => x.id === v.destinoId)
         return {
           ...toVuelo(v),
-          destino: { __typename: 'Destino', id: d.id, nombre: d.nombre, pais: d.pais, emoji: d.emoji },
+          destino: { __typename: 'Destino', id: d.id, nombre: d.nombre, pais: d.pais },
         }
       })
     return HttpResponse.json({ data: { ofertas } })

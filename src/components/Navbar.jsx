@@ -18,7 +18,7 @@ export default function Navbar() {
     <header className="navbar">
       <div className="contenedor navbar__inner">
         <Link to="/" className="navbar__logo" onClick={() => setAbierto(false)}>
-          ✈️ <span>ViajaFácil</span>
+          <span>ViajaFácil</span>
         </Link>
 
         <button
